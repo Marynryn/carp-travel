@@ -10,9 +10,14 @@ const config: Config = {
     extend: {
       letterSpacing: {
         custom: "2.59px",
+        "custom-heading": "-1.6px",
       },
       lineHeight: {
         "custom-tight": "1",
+      },
+      fontSize: {
+        custom: "40px",
+        "custom-37": "37px",
       },
     },
   },
