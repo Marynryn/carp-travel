@@ -11,11 +11,11 @@ import { Navigation, Pagination, EffectFade } from "swiper/modules";
 import data, { Slide } from "../services-data";
 import Heading from "@/app/components/heading";
 import Container from "@/app/components/container";
-
+import { Swiper as SwiperType } from "swiper/types";
 const Slider: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleSlideChange = (swiper: any) => {
+  const handleSlideChange = (swiper: SwiperType) => {
     setActiveIndex(swiper.activeIndex);
   };
 
