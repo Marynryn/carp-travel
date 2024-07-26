@@ -12,15 +12,18 @@ const config: Config = {
         custom: "2.59px",
         "custom-heading": "-1.6px",
         "custom-paragraph": "-0.14px",
+        "2.4": "2.4px",
       },
       lineHeight: {
         "custom-tight": "1",
         "custom-thin": "0.5",
+        "20": "20px",
       },
       fontSize: {
         custom: "40px",
         "custom-37": "37px",
         "custom-10": "10px",
+        "43": "43px",
       },
       width: {
         "button-mobile": "280px",

@@ -7,11 +7,11 @@ import React from "react";
 const About = () => {
   return (
     <section
-      className="relative bg-cover bg-no-repeat"
+      className="relative bg-cover bg-no-repeat about"
       style={{
-        background: "url('/img/bgabout.webp') lightgray  no-repeat",
-        backgroundPosition: " center left",
-        backgroundSize: "cover",
+        backgroundImage: "url('/img/bgabout.webp')",
+        backgroundPosition: " center left -250px",
+
         padding: "55px 0 54px 0",
       }}
     >

@@ -20,12 +20,9 @@ body {
   position: relative;
 }
 
-.section {
-  background-size: cover;
-  background-position: center;
-}
-
-body::before {
+body::before,
+.about::before,
+.slider::before {
   content: "";
   position: absolute;
   top: 0;
@@ -33,7 +30,7 @@ body::before {
   right: 0;
   bottom: 0;
   background-color: var(--background-color);
-  mix-blend-mode: overlay;
-  z-index: 9;
+
+  z-index: 19;
   pointer-events: none;
 }

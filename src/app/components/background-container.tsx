@@ -6,7 +6,7 @@ export interface BackgroundContainerProps {
 const BackgroundContainer = ({ children }: BackgroundContainerProps) => {
   return (
     <div
-      className="relative h-full h-screen"
+      className=" relative h-full h-screen"
       style={{
         background:
           "url('/img/mobile/bghero.webp') lightgray 50% / cover no-repeat",
