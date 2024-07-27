@@ -5,7 +5,7 @@ import Slider from "./components/slider";
 
 export const Services = () => {
   return (
-    <section className="h-screen">
+    <section className="">
       <Slider />
     </section>
   );

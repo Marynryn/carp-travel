@@ -8,13 +8,12 @@ const BackgroundContainer = ({ children }: BackgroundContainerProps) => {
     <div
       className=" relative h-full h-screen"
       style={{
-        background:
-          "url('/img/mobile/bghero.webp') lightgray 50% / cover no-repeat",
+        background: "url('/img/mobile/bghero.webp')  cover no-repeat",
       }}
     >
       <Gradient />
 
-      <div className="relative z-10">{children}</div>
+      <div className="relative z-10 box">{children}</div>
     </div>
   );
 };

@@ -24,6 +24,7 @@ const config: Config = {
         "custom-37": "37px",
         "custom-10": "10px",
         "43": "43px",
+        "13": "13px",
       },
       width: {
         "button-mobile": "280px",

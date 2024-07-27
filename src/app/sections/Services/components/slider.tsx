@@ -14,6 +14,7 @@ import Image from "next/image";
 import Paragraph from "@/app/components/paragraph";
 import Icon from "@/app/components/icon";
 import { before } from "node:test";
+import Gradient from "@/app/components/gradient";
 
 const Slider: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -28,10 +29,6 @@ const Slider: React.FC = () => {
       swiperRef.current.slideTo(index);
     }
   };
-
-  useEffect(() => {
-    console.log(`Active slide index: ${activeIndex}`);
-  }, [activeIndex]);
 
   return (
     <div

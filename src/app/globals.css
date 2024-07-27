@@ -7,22 +7,20 @@
   --main-color: #fff;
   --modal-background: rgba(1, 10, 5, 0.75);
   --button-background: rgba(255, 255, 255, 0.1);
+  --input-field: rgba(255, 255, 255, 0.05);
+  --error-color: rgba(255, 87, 87, 1);
 }
 
 body {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
   color: var(--main-color);
   background-color: var(--background-color);
-  position: relative;
 }
 
-body::before,
-.about::before,
-.slider::before {
+.box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -30,7 +28,7 @@ body::before,
   right: 0;
   bottom: 0;
   background-color: var(--background-color);
-
+  height: 100%;
   z-index: 19;
   pointer-events: none;
 }
