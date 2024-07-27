@@ -3,7 +3,7 @@ import Heading from "@/app/components/heading";
 import Paragraph from "@/app/components/paragraph";
 import React from "react";
 import lists, { List } from "./career-data";
-import ContactForm from "./components/contact-form";
+import ContactForm from "./components/join-form";
 
 const Career = () => {
   return (

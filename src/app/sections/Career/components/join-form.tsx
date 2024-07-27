@@ -19,7 +19,7 @@ export interface FormValues {
   termsAccepted: boolean;
 }
 
-const ContactForm: React.FC = () => {
+const JoinForm: React.FC = () => {
   const {
     register,
     handleSubmit,
@@ -148,4 +148,4 @@ const ContactForm: React.FC = () => {
   );
 };
 
-export default ContactForm;
+export default JoinForm;

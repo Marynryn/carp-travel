@@ -2,7 +2,7 @@
 
 import React from "react";
 import { UseFormRegister } from "react-hook-form";
-import { FormValues } from "../sections/Career/components/contact-form";
+import { FormValues } from "../sections/Career/components/join-form";
 import Icon from "./icon";
 
 interface InputFieldProps {
