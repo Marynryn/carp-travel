@@ -33,9 +33,9 @@ const SliderGallery: React.FC = () => {
           <SwiperSlide key={item.id}>
             {({ isActive, isPrev, isNext, isVisible }) => (
               <div
-                className={`relative w-full h-full flex items-center justify-center transition-transform duration-500 ${
+                className={`relative w-96 h-96 flex items-center justify-center transition-transform duration-500 ${
                   isActive
-                    ? "scale-110 z-10"
+                    ? "scale-110 z-10 "
                     : isVisible
                     ? "scale-90 opacity-50"
                     : "opacity-0"

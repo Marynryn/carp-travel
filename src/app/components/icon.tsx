@@ -14,16 +14,21 @@ const Icon = ({
   fill = "currentColor",
   stroke = "currentColor",
   className = "",
-}: IconProps) => (
-  <svg
-    width={width}
-    height={height}
-    fill={fill}
-    stroke={stroke}
-    className={className}
-  >
-    <use xlinkHref={`/svg/symbol-defs.svg#${id}`} />
-  </svg>
-);
+}: IconProps) => {
+  const href = `/svg/symbol-defs.svg#${id}`;
+
+  return (
+    <svg
+      width={width}
+      height={height}
+      fill={fill}
+      stroke={stroke}
+      className={className}
+      aria-hidden="true"
+    >
+      <use xlinkHref={href} />
+    </svg>
+  );
+};
 
 export default Icon;
