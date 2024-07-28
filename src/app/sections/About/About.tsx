@@ -1,5 +1,4 @@
 import Container from "@/app/components/container";
-import Gradient from "@/app/components/gradient";
 import Heading from "@/app/components/heading";
 import Paragraph from "@/app/components/paragraph";
 import React from "react";
@@ -7,15 +6,11 @@ import React from "react";
 const About = () => {
   return (
     <section
-      className="relative bg-cover bg-no-repeat about"
+      className="relative bg-cover bg-no-repeat flex justify-center about"
       style={{
-        backgroundImage: "url('/img/bgabout.webp')",
-        backgroundPosition: " center left -250px",
-
         padding: "55px 0 54px 0",
       }}
     >
-      <Gradient />
       <Container>
         <Heading
           tag="h2"

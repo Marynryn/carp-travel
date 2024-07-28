@@ -7,13 +7,13 @@ import Gallery from "./sections/Gallery/Gallery";
 
 export default function MyApp() {
   return (
-    <main className="">
+    <>
       <Hero />
       <About />
       <Services />
       <Career />
       <Gallery />
       <Toaster position="top-right" reverseOrder={false} />
-    </main>
+    </>
   );
 }

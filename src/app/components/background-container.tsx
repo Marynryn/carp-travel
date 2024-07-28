@@ -1,18 +1,14 @@
-import Gradient from "./gradient";
-
 export interface BackgroundContainerProps {
   children: React.ReactNode;
 }
 const BackgroundContainer = ({ children }: BackgroundContainerProps) => {
   return (
     <div
-      className=" relative h-full h-screen"
+      className=" relative  h-full  bg-no-repeat w-full"
       style={{
-        background: "url('/img/mobile/bghero.webp')  cover no-repeat",
+        backgroundImage: "url('/img/bghero.webp')",
       }}
     >
-      <Gradient />
-
       <div className="relative z-10 box">{children}</div>
     </div>
   );

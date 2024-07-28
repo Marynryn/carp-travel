@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,8 +13,6 @@ import { Swiper as SwiperType } from "swiper/types";
 import Image from "next/image";
 import Paragraph from "@/app/components/paragraph";
 import Icon from "@/app/components/icon";
-import { before } from "node:test";
-import Gradient from "@/app/components/gradient";
 
 const Slider: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -32,7 +30,7 @@ const Slider: React.FC = () => {
 
   return (
     <div
-      className="relative w-full bg-cover slider "
+      className="relative w-full bg-cover slider flex justify-center"
       style={{
         backgroundImage: `url(${data[activeIndex].bgImage})`,
 

@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: "480px",
+        md: "768px",
+        xl: "1280px",
+      },
       letterSpacing: {
         custom: "2.59px",
         "custom-heading": "-1.6px",
@@ -18,6 +23,7 @@ const config: Config = {
         "custom-tight": "1",
         "custom-thin": "0.5",
         "20": "20px",
+        "56": "56px",
       },
       fontSize: {
         custom: "40px",
@@ -30,6 +36,9 @@ const config: Config = {
         "button-mobile": "280px",
         "paragraph-mobile": "180px",
         "image-mobile": "280px",
+        "440": "440px",
+        "704": "704px",
+        "1232": "1232px",
       },
     },
   },

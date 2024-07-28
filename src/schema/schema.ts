@@ -22,3 +22,16 @@ export const schema = yup.object().shape({
     .oneOf([true], "You must accept the terms ")
     .required("You must accept the terms "),
 });
+
+export const contactSchema = yup.object().shape({
+  fullName: yup
+    .string()
+    .required("Full name is required")
+    .min(2, "  Name must be at least 2 characters")
+    .matches(
+      /^[a-zA-Zа-яА-Я\s]*$/,
+      " First Name can only contain letters and spaces"
+    ),
+  email: yup.string().email("Incorrect email ").required("Email is required"),
+  message: yup.string(),
+});

@@ -9,7 +9,7 @@ const Career = () => {
   return (
     <section>
       <div
-        className=" bg-cover  career"
+        className=" bg-cover  career flex justify-center"
         style={{
           backgroundImage: "url('/img/bgcareer.webp')",
           backgroundPosition: " center top",
@@ -53,7 +53,7 @@ const Career = () => {
         </Container>
       </div>
       <div
-        className=" bg-cover  career"
+        className=" bg-cover  career flex justify-center"
         style={{
           backgroundImage: "url('/img/bgcareer.webp')",
           backgroundPosition: " center top",

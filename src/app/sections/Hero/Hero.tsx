@@ -7,7 +7,7 @@ import JoinButton from "./components/join-button";
 
 const Hero: React.FC = () => {
   return (
-    <section className="  pb-14 bg-cover bg-center bg-no-repeat ">
+    <section className="  pb-14 bg-cover bg-center bg-no-repeat flex justify-center ">
       <Container>
         <Journey />
         <div className="w-button-mobile">

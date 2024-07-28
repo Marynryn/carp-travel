@@ -9,7 +9,7 @@ interface InputFieldProps {
   name: keyof FormValues;
   type?: string;
   placeholder?: string;
-  register: UseFormRegister<FormValues>;
+  register: UseFormRegister<any>;
   error?: string;
   className?: string;
 }
