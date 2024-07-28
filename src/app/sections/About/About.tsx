@@ -6,6 +6,7 @@ import React from "react";
 const About = () => {
   return (
     <section
+      id="about"
       className="relative bg-cover bg-no-repeat flex justify-center about"
       style={{
         padding: "55px 0 54px 0",

@@ -4,7 +4,7 @@ import Slider from "./components/slider";
 
 export const Services = () => {
   return (
-    <section className=" ">
+    <section id="services" className=" ">
       <Slider />
     </section>
   );

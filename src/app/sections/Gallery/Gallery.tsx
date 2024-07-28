@@ -7,6 +7,7 @@ import SliderGallery from "./components/slider-gallery";
 const Gallery = () => {
   return (
     <section
+      id="gallery"
       className=" bg-cover flex justify-center"
       style={{
         backgroundImage: "url('/img/bggallery.webp')",

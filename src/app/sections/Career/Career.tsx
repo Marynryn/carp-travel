@@ -7,7 +7,7 @@ import ContactForm from "./components/join-form";
 
 const Career = () => {
   return (
-    <section>
+    <section id="career">
       <div
         className=" bg-cover  career flex justify-center"
         style={{

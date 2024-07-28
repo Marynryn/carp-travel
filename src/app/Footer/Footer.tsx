@@ -7,6 +7,7 @@ import ContactForm from "./components/contact-form";
 const Footer = () => {
   return (
     <footer
+      id="contacts"
       className="flex justify-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: "url('/img/bgfooter.webp')",
