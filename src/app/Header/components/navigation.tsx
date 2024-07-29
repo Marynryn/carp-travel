@@ -12,7 +12,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
   };
   return (
     <nav className="" style={{ letterSpacing: " 1.8px" }}>
-      <ul className="flex flex-col gap-12 text-center text-lg md:flex-row md:gap-6 md:text-sm md:tracking-1.26">
+      <ul className="flex flex-col gap-12 text-center text-lg md:flex-row md:gap-6 md:text-sm md:tracking-1.26 xl:gap-14">
         <li>
           <Link
             to="about"

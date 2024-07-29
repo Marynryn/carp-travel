@@ -1,4 +1,5 @@
 "use client";
+
 interface IconProps {
   id: string;
   width?: number;
@@ -8,14 +9,7 @@ interface IconProps {
   className?: string;
 }
 
-const Icon = ({
-  id,
-  width = 24,
-  height = 24,
-  fill = "currentColor",
-  stroke = "currentColor",
-  className = "",
-}: IconProps) => {
+const Icon = ({ id, width, height, fill, stroke, className }: IconProps) => {
   const href = `/svg/symbol-defs.svg#${id}`;
 
   return (
@@ -25,7 +19,6 @@ const Icon = ({
       fill={fill}
       stroke={stroke}
       className={className}
-      aria-hidden="true"
     >
       <use xlinkHref={href} />
     </svg>
