@@ -31,7 +31,7 @@ const Slider: React.FC = () => {
 
   return (
     <div
-      className="relative w-full py-56 bg-cover slider flex justify-center md:py-16 "
+      className="relative w-full py-54 bg-cover slider flex justify-center md:py-16 "
       style={{
         backgroundImage: `url(${data[activeIndex].bgImage})`,
         backgroundSize: "cover",
@@ -45,7 +45,7 @@ const Slider: React.FC = () => {
           </Title>
           <Heading
             tag="h3"
-            className="text-4xl mb-2 font-thin mr-0 ml-auto md:text-67 md:mb-0  md:leading-80 "
+            className="text-4xl mb-2 text-right font-thin mr-0 ml-auto md:text-67 md:mb-0  md:leading-80 "
           >
             0{activeIndex + 1}
             <span className="text-4xl opacity-20 md:text-67">/05</span>
@@ -77,7 +77,7 @@ const Slider: React.FC = () => {
                   className="w-image-mobile h-213 object-cover mb-2 md:w-463 md:h-370 "
                 />
                 <div className="md:flex md:flex-col">
-                  <Paragraph className="text-xs mb-6 font-extralight tracking-2.4 mr-0 ml-auto md:order-2 md:mb-8 md:mx-0">
+                  <Paragraph className="text-xs mb-6 text-right font-extralight tracking-2.4 mr-0 ml-auto md:order-2 md:mb-8 md:mx-0">
                     {slide.title}
                   </Paragraph>
                   <ul className="custom-pagination mt-4 mb-8  flex flex-col gap-4 ml-0 mr-auto md:order-1 md:mt-0 md:mb-6">
@@ -96,7 +96,7 @@ const Slider: React.FC = () => {
                           />
                         )}
                         <Paragraph
-                          className={`text-xl uppercase md:text-22  ${
+                          className={`text-xl uppercase md:text-22 md:leading-5  ${
                             idx === activeIndex
                               ? "font-medium ml-2 opacity-100"
                               : "font-extralight opacity-50"
@@ -107,7 +107,7 @@ const Slider: React.FC = () => {
                       </li>
                     ))}
                   </ul>
-                  <Paragraph className="text-sm font-extralight leading-5 text-justify md:order-3 ">
+                  <Paragraph className="text-sm md:h-120 font-extralight leading-5 text-justify md:order-3 md:leading-normal md:text-13">
                     {slide.description}
                   </Paragraph>
                 </div>

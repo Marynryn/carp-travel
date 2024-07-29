@@ -65,6 +65,7 @@ const config: Config = {
         "220": "220px",
         "370": "370px",
         "213": "213px",
+        "120": "120px",
       },
       backgroundColor: {
         "--button-background": "rgba(255, 255, 255, 0.1)",

@@ -1,3 +1,4 @@
+"use client";
 interface IconProps {
   id: string;
   width?: number;
