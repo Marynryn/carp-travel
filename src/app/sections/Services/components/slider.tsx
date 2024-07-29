@@ -12,7 +12,7 @@ import Container from "@/app/components/container";
 import { Swiper as SwiperType } from "swiper/types";
 import Image from "next/image";
 import Paragraph from "@/app/components/paragraph";
-import Icon from "@/app/components/icon";
+import Icon from "../../../components/icon-svg";
 import Title from "@/app/components/title";
 
 const Slider: React.FC = () => {

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { scroller } from "react-scroll";
-import Icon from "@/app/components/icon";
+import Icon from "../../../components/icon-svg";
 import { useMediaQuery } from "react-responsive";
 
 const JoinButton: React.FC = () => {

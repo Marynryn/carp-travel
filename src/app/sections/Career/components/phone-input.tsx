@@ -3,7 +3,7 @@
 import React, { ChangeEvent, FC, useState } from "react";
 import { UseFormRegister } from "react-hook-form";
 import { FormValues } from "./join-form";
-import Icon from "@/app/components/icon";
+import Icon from "../../../components/icon-svg";
 
 interface PhoneInputProps {
   register: UseFormRegister<FormValues>;
