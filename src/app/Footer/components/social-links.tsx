@@ -4,7 +4,7 @@ import React from "react";
 const SocialLinks = () => {
   return (
     <div className="flex gap-5 justify-end">
-      <Heading tag="h4" className="text-xs font-extralight leading-5">
+      <Heading tag="h4" className="text-xs font-extralight leading-5 mt-1">
         Follow us
       </Heading>
       <ul className="w-20 text-left">
@@ -14,7 +14,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
-            className="text-sm font-normal  hover:underline focus:underline"
+            className="text-sm font-normal  hover:underline focus:underline md:text-base"
           >
             facebook
           </a>
@@ -26,7 +26,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="text-sm font-normal hover:underline focus:underline"
+            className="text-sm font-normal hover:underline focus:underline md:text-base"
           >
             instagram
           </a>
@@ -37,7 +37,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
-            className="text-sm font-normal hover:underline focus:underline"
+            className="text-sm font-normal hover:underline focus:underline md:text-base"
           >
             youtube
           </a>
@@ -48,7 +48,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"
-            className="text-sm font-normal hover:underline focus:underline"
+            className="text-sm font-normal hover:underline focus:underline md:text-base"
           >
             tiktok
           </a>

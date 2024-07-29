@@ -18,11 +18,18 @@ body {
   height: 100%;
   color: var(--main-color);
 }
+
 .about {
   background-image: url(/img/bg/mobile/bgabout.webp);
   background-position: center right;
   @media screen and (min-width: 768px) {
     background-image: url(/img/bgabout.webp);
     background-position: center left;
+  }
+}
+.bg {
+  background-image: url(/img/bghero.webp);
+  @media screen and (min-width: 1440px) {
+    background-size: contain;
   }
 }

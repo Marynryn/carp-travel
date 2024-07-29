@@ -5,7 +5,7 @@ const Email = () => {
   return (
     <div className="flex gap-5 justify-end">
       <a
-        className="text-sm font-normal hover:underline focus:underline"
+        className="text-sm font-normal hover:underline focus:underline md:text-base"
         href="mailto:support@carptravel.com"
       >
         support@carptravel.com

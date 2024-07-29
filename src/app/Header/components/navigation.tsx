@@ -1,35 +1,72 @@
 import React from "react";
+import { Link } from "react-scroll";
+export interface NavigationProps {
+  onClose?: () => void;
+}
 
-export interface NavigationProps {}
-
-const Navigation = (props: NavigationProps) => {
+const Navigation = ({ onClose }: NavigationProps) => {
+  const handleLinkClick = () => {
+    if (onClose) {
+      onClose();
+    }
+  };
   return (
     <nav className="" style={{ letterSpacing: " 1.8px" }}>
-      <ul className="flex flex-col gap-12 text-center text-lg">
+      <ul className="flex flex-col gap-12 text-center text-lg md:flex-row md:gap-6 md:text-sm md:tracking-1.26">
         <li>
-          <a href="#about" className="">
+          <Link
+            to="about"
+            onClick={handleLinkClick}
+            smooth={true}
+            duration={500}
+            className=""
+          >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#services" className="">
+          <Link
+            to="services"
+            onClick={handleLinkClick}
+            smooth={true}
+            duration={500}
+            className=""
+          >
             Services
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#career" className="">
+          <Link
+            to="career"
+            onClick={handleLinkClick}
+            smooth={true}
+            duration={500}
+            className=""
+          >
             Career
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#gallery" className="">
+          <Link
+            to="gallery"
+            onClick={handleLinkClick}
+            smooth={true}
+            duration={500}
+            className=""
+          >
             Gallery
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#contacts" className="">
+          <Link
+            to="contacts"
+            onClick={handleLinkClick}
+            smooth={true}
+            duration={500}
+            className=""
+          >
             Contacts
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

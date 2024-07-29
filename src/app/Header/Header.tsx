@@ -11,11 +11,11 @@ const Header: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <header className="flex justify-center">
-      <div className="px-5 py-9 w-full flex justify-between items-center sm:w-440  md:w-704 md:px-8 xl:w-1232 xl:mx-auto">
+      <div className="px-5 py-9 w-full flex justify-between items-center sm:w-480  md:w-768 md:px-8 md:pt-6 xl:w-1280 xl:mx-auto">
         <Link href={"/"}>
           <Logo />
         </Link>
-        <div className="">
+        <div className="md:hidden">
           <Button
             type="button"
             onClick={() => setModalOpen(true)}
@@ -24,8 +24,11 @@ const Header: React.FC = () => {
             Menu
           </Button>
         </div>
-        <Modal show={modalOpen} onClose={() => setModalOpen(false)}>
+        <div className="hidden md:block">
           <Navigation />
+        </div>
+        <Modal show={modalOpen} onClose={() => setModalOpen(false)}>
+          <Navigation onClose={() => setModalOpen(false)} />
         </Modal>
       </div>
     </header>

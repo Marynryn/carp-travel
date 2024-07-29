@@ -7,7 +7,7 @@ const Phone = () => {
       <ul className="">
         <li>
           <a
-            className="text-sm font-normal hover:underline focus:underline"
+            className="text-sm font-normal hover:underline focus:underline md:text-base"
             href="tel:380981234567"
           >
             +38 (098) 12 34 567
@@ -15,7 +15,7 @@ const Phone = () => {
         </li>
         <li>
           <a
-            className="text-sm font-normal hover:underline focus:underline"
+            className="text-sm font-normal hover:underline focus:underline md:text-base"
             href="tel:380981234567"
           >
             +38 (098) 12 34 567

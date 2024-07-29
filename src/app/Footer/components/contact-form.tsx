@@ -45,64 +45,70 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit, onError)} className="mt-6">
-      <div className="block ">
-        <label
-          htmlFor="fullName"
-          className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
-            errors.fullName?.message ? "text-red-700" : ""
-          }`}
-        >
-          Full name
-        </label>
-        <InputField
-          name="fullName"
-          placeholder="John Smith"
-          register={register}
-          error={errors.fullName?.message}
-        />
-      </div>
+    <form
+      onSubmit={handleSubmit(onSubmit, onError)}
+      className="mt-6 md:mt-16 md:flex md:gap-5"
+    >
+      <div className="md:w-220">
+        <div className="block ">
+          <label
+            htmlFor="fullName"
+            className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
+              errors.fullName?.message ? "text-red-700" : ""
+            }`}
+          >
+            Full name
+          </label>
+          <InputField
+            name="fullName"
+            placeholder="John Smith"
+            register={register}
+            error={errors.fullName?.message}
+          />
+        </div>
 
-      <div>
-        <label
-          htmlFor="email"
-          className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
-            errors.email?.message ? "text-red-700" : ""
-          }`}
-        >
-          Email
-        </label>
-        <InputField
-          name="email"
-          type="email"
-          placeholder="johnrosie@gmail.com"
-          register={register}
-          error={errors.email?.message}
-        />
+        <div>
+          <label
+            htmlFor="email"
+            className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
+              errors.email?.message ? "text-red-700" : ""
+            }`}
+          >
+            Email
+          </label>
+          <InputField
+            name="email"
+            type="email"
+            placeholder="johnrosie@gmail.com"
+            register={register}
+            error={errors.email?.message}
+          />
+        </div>
       </div>
+      <div className="w-full ">
+        <div className=" mb-4">
+          <label
+            htmlFor="message"
+            className="block text-left text-xs font-extralight tracking-2.4 leading-6"
+          >
+            Message
+          </label>
+          <textarea
+            id="message"
+            {...register("message")}
+            className="w-full border-none mt-2  h-36 text-13 font-extralight  resize-none md:mt-1 md:h-220"
+            style={{ backgroundColor: "var(--input-field)" }}
+          />
+        </div>
 
-      <div className=" mb-4">
-        <label
-          htmlFor="message"
-          className="block text-left text-xs font-extralight tracking-2.4 leading-6"
-        >
-          Message
-        </label>
-        <textarea
-          id="message"
-          {...register("message")}
-          className="w-full border-none mt-2  h-36 text-13 font-extralight  resize-none"
-          style={{ backgroundColor: "var(--input-field)" }}
-        />
-      </div>
-
-      <div className="flex justify-end">
-        <button
-          type="submit"
-          className="border-none bg-transparent  uppercase text-3xl font-medium  inline-block"
-        >
-          Send
-        </button>
+        <div className="flex justify-end">
+          <button
+            type="submit"
+            className="border-none bg-transparent  uppercase text-3xl font-medium  inline-block"
+          >
+            Send
+          </button>
+        </div>
       </div>
     </form>
   );

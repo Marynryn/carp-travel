@@ -52,97 +52,107 @@ const JoinForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit, onError)} className="mt-6">
-      <div className="block ">
-        <label
-          htmlFor="fullName"
-          className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
-            errors.fullName?.message ? "text-red-700" : ""
-          }`}
-        >
-          Full name
-        </label>
-        <InputField
-          name="fullName"
-          placeholder="John Smith"
-          register={register}
-          error={errors.fullName?.message}
-        />
-      </div>
+      <div className="md:flex md:gap-5">
+        <div>
+          <div className="block ">
+            <label
+              htmlFor="fullName"
+              className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
+                errors.fullName?.message ? "text-red-700" : ""
+              }`}
+            >
+              Full name
+            </label>
+            <InputField
+              name="fullName"
+              placeholder="John Smith"
+              register={register}
+              error={errors.fullName?.message}
+            />
+          </div>
 
-      <div>
-        <label
-          htmlFor="email"
-          className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
-            errors.email?.message ? "text-red-700" : ""
-          }`}
-        >
-          Email
-        </label>
-        <InputField
-          name="email"
-          type="email"
-          placeholder="johnrosie@gmail.com"
-          register={register}
-          error={errors.email?.message}
-        />
-      </div>
+          <div>
+            <label
+              htmlFor="email"
+              className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
+                errors.email?.message ? "text-red-700" : ""
+              }`}
+            >
+              Email
+            </label>
+            <InputField
+              name="email"
+              type="email"
+              placeholder="johnrosie@gmail.com"
+              register={register}
+              error={errors.email?.message}
+            />
+          </div>
 
-      <div>
-        <label
-          htmlFor="phone"
-          className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
-            errors.phone?.message ? "text-red-700" : ""
-          }`}
-        >
-          Phone
-        </label>
-        <PhoneInputField register={register} error={errors.phone?.message} />
-      </div>
+          <div>
+            <label
+              htmlFor="phone"
+              className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
+                errors.phone?.message ? "text-red-700" : ""
+              }`}
+            >
+              Phone
+            </label>
+            <PhoneInputField
+              register={register}
+              error={errors.phone?.message}
+            />
+          </div>
 
-      <div>
-        <label
-          htmlFor="position"
-          className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
-            errors.position?.message ? "text-red-700" : ""
-          }`}
-        >
-          Position
-        </label>
-        <InputField
-          name="position"
-          placeholder="Movie maker"
-          register={register}
-          error={errors.position?.message}
-        />
+          <div>
+            <label
+              htmlFor="position"
+              className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
+                errors.position?.message ? "text-red-700" : ""
+              }`}
+            >
+              Position
+            </label>
+            <InputField
+              name="position"
+              placeholder="Movie maker"
+              register={register}
+              error={errors.position?.message}
+            />
+          </div>
+        </div>
+        <div className=" mb-4 md:w-220">
+          <label
+            htmlFor="message"
+            className="block text-left text-xs font-extralight tracking-2.4 leading-6"
+          >
+            Message
+          </label>
+          <textarea
+            id="message"
+            {...register("message")}
+            className="w-full border-none mt-2  h-36 text-13 font-extralight  resize-none md:h-228 md:mt-1"
+            style={{ backgroundColor: "var(--input-field)" }}
+          />
+        </div>
       </div>
-
-      <div className=" mb-4">
-        <label
-          htmlFor="message"
-          className="block text-left text-xs font-extralight tracking-2.4 leading-6"
-        >
-          Message
-        </label>
-        <textarea
-          id="message"
-          {...register("message")}
-          className="w-full border-none mt-2  h-36 text-13 font-extralight  resize-none"
-          style={{ backgroundColor: "var(--input-field)" }}
-        />
-      </div>
-      <Checkbox
-        name="termsAccepted"
-        register={register}
-        setValue={setValue}
-        error={errors.termsAccepted?.message}
-      />
-      <div className="flex justify-end">
-        <button
-          type="submit"
-          className="border-none bg-transparent  uppercase text-3xl font-medium  inline-block"
-        >
-          Send
-        </button>
+      <div className="md:flex md:justify-between">
+        <div className="md:w-220">
+          <Checkbox
+            name="termsAccepted"
+            register={register}
+            setValue={setValue}
+            error={errors.termsAccepted?.message}
+          />
+        </div>
+        <div className="flex justify-end">
+          <button
+            type="submit"
+            className="border-none bg-transparent h-9 uppercase text-3xl font-medium  inline-block"
+          >
+            Send
+          </button>
+        </div>
       </div>
     </form>
   );

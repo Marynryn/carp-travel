@@ -1,31 +1,30 @@
+"use client";
 import React from "react";
 import Container from "../components/container";
-import Heading from "../components/heading";
+
 import Contacts from "./components/contacts";
 import ContactForm from "./components/contact-form";
+import { Element } from "react-scroll";
+import Title from "../components/title";
 
 const Footer = () => {
   return (
-    <footer
+    <Element
+      name="contacts"
       id="contacts"
-      className="flex justify-center bg-cover bg-no-repeat"
+      className="flex justify-center py-56 bg-cover bg-no-repeat md:py-16"
       style={{
         backgroundImage: "url('/img/bgfooter.webp')",
-
-        padding: "56px 0",
       }}
     >
       <Container>
-        <Heading
-          tag="h2"
-          className="uppercase text-custom font-thin tracking-custom-heading"
-        >
+        <Title>
           Contact <span className="font-medium">us</span>
-        </Heading>
+        </Title>
         <Contacts />
         <ContactForm />
       </Container>
-    </footer>
+    </Element>
   );
 };
 export default Footer;

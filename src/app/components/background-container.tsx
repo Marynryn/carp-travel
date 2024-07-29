@@ -4,7 +4,7 @@ export interface BackgroundContainerProps {
 const BackgroundContainer = ({ children }: BackgroundContainerProps) => {
   return (
     <div
-      className=" relative  h-full  bg-no-repeat w-full"
+      className=" relative  h-full  bg-no-repeat w-full bg"
       style={{
         backgroundImage: "url('/img/bghero.webp')",
       }}
