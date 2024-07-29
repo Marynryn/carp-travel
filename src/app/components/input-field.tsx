@@ -3,7 +3,7 @@
 import React from "react";
 import { UseFormRegister } from "react-hook-form";
 import { FormValues } from "../sections/Career/components/join-form";
-import Icon from "./icon";
+import Icon from "@/app/components/icon";
 
 interface InputFieldProps {
   name: keyof FormValues;
