@@ -1,9 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  basePath: "/carp-travel",
-  assetPrefix: "/carp-travel/",
-  trailingSlash: true,
-};
+const nextConfig = {};
 
 export default nextConfig;
