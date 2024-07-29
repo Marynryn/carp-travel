@@ -9,7 +9,14 @@ interface IconProps {
   className?: string;
 }
 
-const Icon = ({ id, width, height, fill, stroke, className }: IconProps) => {
+export default function Icon({
+  id,
+  width,
+  height,
+  fill,
+  stroke,
+  className,
+}: IconProps) {
   const href = `/svg/symbol-defs.svg#${id}`;
 
   return (
@@ -23,6 +30,4 @@ const Icon = ({ id, width, height, fill, stroke, className }: IconProps) => {
       <use xlinkHref={href} />
     </svg>
   );
-};
-
-export default Icon;
+}
