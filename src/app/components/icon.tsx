@@ -1,4 +1,5 @@
-"use client";
+// src/app/components/icon.tsx
+import React from "react";
 
 interface IconProps {
   id: string;
@@ -9,14 +10,14 @@ interface IconProps {
   className?: string;
 }
 
-export default function Icon({
+const Icon: React.FC<IconProps> = ({
   id,
-  width,
-  height,
-  fill,
-  stroke,
-  className,
-}: IconProps) {
+  width = 24,
+  height = 24,
+  fill = "currentColor",
+  stroke = "currentColor",
+  className = "",
+}) => {
   const href = `/svg/symbol-defs.svg#${id}`;
 
   return (
@@ -26,8 +27,11 @@ export default function Icon({
       fill={fill}
       stroke={stroke}
       className={className}
+      aria-hidden="true"
     >
       <use xlinkHref={href} />
     </svg>
   );
-}
+};
+
+export default Icon;
