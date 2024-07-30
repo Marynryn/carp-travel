@@ -6,6 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import toast from "react-hot-toast";
 import InputField from "@/app/components/input-field";
 import { contactSchema } from "@/schema/schema";
+import Button from "@/app/components/button";
 
 export interface ContactFormValues {
   fullName: string;
@@ -100,12 +101,12 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div className="flex justify-end">
-          <button
+          <Button
             type="submit"
             className="border-none bg-transparent  uppercase text-3xl font-medium  inline-block"
           >
             Send
-          </button>
+          </Button>
         </div>
       </div>
     </form>

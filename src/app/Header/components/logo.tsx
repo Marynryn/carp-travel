@@ -11,8 +11,11 @@ const Logo = ({ className = "" }: LogoProps) => {
     <div className={`text-center ${className}`} style={{ width: "61px" }}>
       <div className="relative h-5 w-61">
         <picture>
-          <source srcSet="/img/logo1x.webp" type="image/webp" />
-          <source srcSet="/img/logo2x.webp" type="image/webp" />
+          <source
+            srcSet="/img/logo1x.webp 1x, /img/logo2x.webp 2x "
+            type="image/webp"
+          />
+
           <Image
             src="/img/logo1x.webp"
             alt="Company Logo"

@@ -77,8 +77,9 @@ const Slider: React.FC = () => {
                   width={608}
                   height={434}
                   loading="lazy"
-                  className="w-image-mobile h-213 object-cover mb-2 md:w-463 md:h-370 xl:w-607 xl:h-429"
+                  className="w-image-mobile h-213 object-cover mb-2 md:w-463 md:h-370 md:mb-0 xl:w-607 xl:h-429"
                 />
+
                 <div className="md:flex md:flex-col xl:flex-row xl:gap-12">
                   <Paragraph className=" xl:hidden text-xs mb-6 text-right font-extralight tracking-2.4 mr-0 ml-auto md:order-2 md:mb-8 md:mx-0">
                     {slide.title}
@@ -91,7 +92,7 @@ const Slider: React.FC = () => {
                         onClick={() => handlePaginationClick(idx)}
                       >
                         <Button>
-                          <div className="flex items-center">
+                          <div className="flex items-center justify-start">
                             {idx === activeIndex && (
                               <Icon
                                 id="icon-Rectangle-32"
@@ -101,11 +102,12 @@ const Slider: React.FC = () => {
                               />
                             )}
                             <Paragraph
-                              className={`text-xl uppercase md:text-22 md:leading-5 xl:leading-6 xl:text-28 hover:font-normal ${
-                                idx === activeIndex
-                                  ? "font-medium ml-2 opacity-100"
-                                  : "font-extralight opacity-50"
-                              } `}
+                              className={`text-xl uppercase md:text-22 md:leading-5 xl:text-28 xl:leading-6 text-left
+                                 hover:font-normal  ${
+                                   idx === activeIndex
+                                     ? "font-medium ml-2 opacity-100"
+                                     : "font-extralight opacity-50"
+                                 } `}
                             >
                               {item.name}
                             </Paragraph>

@@ -6,6 +6,7 @@ import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "../../../../schema/schema";
 import InputField from "@/app/components/input-field";
+import Button from "@/app/components/button";
 import Checkbox from "./checkbox";
 import PhoneInputField from "./phone-input";
 
@@ -144,12 +145,12 @@ const JoinForm: React.FC = () => {
           />
         </div>
         <div className="flex justify-end">
-          <button
+          <Button
             type="submit"
             className="border-none bg-transparent h-9 uppercase text-3xl font-medium  inline-block"
           >
             Send
-          </button>
+          </Button>
         </div>
       </div>
     </form>

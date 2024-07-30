@@ -2,6 +2,7 @@ export interface Slide {
   id: number;
   bgImage: string;
   img: string;
+
   title: string;
   name: string;
   description: string;
@@ -11,7 +12,8 @@ const data: Slide[] = [
   {
     id: 1,
     bgImage: "/img/slider/bg/01.webp",
-    img: "/img/slider/01.webp",
+    img: "/img/slider/mobile/01.webp",
+
     name: "ATVs Traveling",
     title: "Feel the adrenaline rush",
     description:
@@ -20,7 +22,8 @@ const data: Slide[] = [
   {
     id: 2,
     bgImage: "/img/slider/bg/02.webp",
-    img: "/img/slider/02.webp",
+    img: "/img/slider/mobile/02.webp",
+
     title: "Destroy your limitations",
     name: "Rock climbing",
     description:
@@ -29,7 +32,8 @@ const data: Slide[] = [
   {
     id: 3,
     bgImage: "/img/slider/bg/03.webp",
-    img: "/img/slider/03.webp",
+    img: "/img/slider/mobile/03.webp",
+
     title: "Get Inspired",
     name: "Hot air ballooning",
     description:
@@ -38,7 +42,8 @@ const data: Slide[] = [
   {
     id: 4,
     bgImage: "/img/slider/bg/04.webp",
-    img: "/img/slider/04.webp",
+    img: "/img/slider/mobile/04.webp",
+
     title: "Overcome your fears",
     name: "Skydiving",
     description:
@@ -47,7 +52,8 @@ const data: Slide[] = [
   {
     id: 5,
     bgImage: "/img/slider/bg/05.webp",
-    img: "/img/slider/05.webp",
+    img: "/img/slider/mobile/05.webp",
+
     title: "Trust the flow",
     name: "Rafting",
     description:
