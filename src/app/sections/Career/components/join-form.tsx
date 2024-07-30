@@ -1,11 +1,10 @@
 "use client";
 
 import React from "react";
+import toast from "react-hot-toast";
 import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "../../../../schema/schema";
-import toast from "react-hot-toast";
-
 import InputField from "@/app/components/input-field";
 import Checkbox from "./checkbox";
 import PhoneInputField from "./phone-input";

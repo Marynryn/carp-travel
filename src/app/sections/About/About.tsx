@@ -1,8 +1,7 @@
+import React from "react";
 import Container from "@/app/components/container";
-
 import Paragraph from "@/app/components/paragraph";
 import Title from "@/app/components/title";
-import React from "react";
 
 const About = () => {
   return (

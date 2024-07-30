@@ -1,5 +1,5 @@
-import Heading from "@/app/components/heading";
 import React from "react";
+import Heading from "@/app/components/heading";
 
 const Phone = () => {
   return (

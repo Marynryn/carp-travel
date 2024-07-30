@@ -1,8 +1,7 @@
 import Container from "@/app/components/container";
 import Heading from "@/app/components/heading";
-import Journey from "./components/journey";
 import Paragraph from "@/app/components/paragraph";
-
+import Journey from "./components/journey";
 import JoinButton from "./components/join-button";
 
 const Hero: React.FC = () => {

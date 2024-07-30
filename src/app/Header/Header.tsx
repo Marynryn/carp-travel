@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import Logo from "./components/logo";
-import Button from "../components/button";
 import { useState } from "react";
+import Link from "next/link";
+import Button from "../components/button";
 import Modal from "../components/modal";
+import Logo from "./components/logo";
 import Navigation from "./components/navigation";
 
 const Header: React.FC = () => {
@@ -12,15 +12,11 @@ const Header: React.FC = () => {
   return (
     <header className="flex justify-center">
       <div className="px-5 py-9 w-full flex justify-between items-center sm:w-480  md:w-768 md:px-8 md:pt-6 xl:w-1280 xl:mx-auto xl:pb-12">
-        <Link href={"/"}>
+        <Link href={"/"} className="inline-block ">
           <Logo />
         </Link>
         <div className="md:hidden">
-          <Button
-            type="button"
-            onClick={() => setModalOpen(true)}
-            className="text-sm"
-          >
+          <Button onClick={() => setModalOpen(true)} className="text-sm ">
             Menu
           </Button>
         </div>

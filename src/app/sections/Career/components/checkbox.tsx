@@ -2,8 +2,8 @@
 
 import React from "react";
 import { UseFormRegister, Path, UseFormSetValue } from "react-hook-form";
-import { FormValues } from "./join-form";
 import Icon from "../../../components/icon-svg";
+import { FormValues } from "./join-form";
 
 interface CheckboxProps {
   name: Path<FormValues>;

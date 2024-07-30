@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import { scroller } from "react-scroll";
-import Icon from "../../../components/icon-svg";
 import { useMediaQuery } from "react-responsive";
+import Icon from "../../../components/icon-svg";
 
 const JoinButton: React.FC = () => {
   const isTablet = useMediaQuery({
@@ -62,11 +62,11 @@ const JoinButton: React.FC = () => {
   };
 
   return (
-    <div className="h-53 w-button-mobile mt-6 md:w-230 md:h-50 xl:h-71 xl:w-full">
+    <div className="h-53 w-button-mobile mt-6 md:w-230 md:h-50 xl:h-71 xl:w-full mx-auto ">
       <button
         type="button"
         onClick={scrollToContacts}
-        className="h-full flex cursor-pointer -bg--button-background items-center w-full uppercase hover:bg-hover-button"
+        className="h-full flex cursor-pointer -bg--button-background items-center w-full uppercase hover:bg-hover-button focus:bg-hover-button "
       >
         <Icon
           id={iconProps.left.id}

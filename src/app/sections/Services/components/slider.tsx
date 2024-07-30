@@ -1,19 +1,20 @@
 "use client";
 
 import React, { useState, useRef } from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/effect-fade";
+import { Swiper as SwiperType } from "swiper/types";
 import { Pagination, EffectFade } from "swiper/modules";
 import data, { Slide } from "../services-data";
 import Heading from "@/app/components/heading";
 import Container from "@/app/components/container";
-import { Swiper as SwiperType } from "swiper/types";
-import Image from "next/image";
 import Paragraph from "@/app/components/paragraph";
 import Icon from "../../../components/icon-svg";
 import Title from "@/app/components/title";
+import Button from "@/app/components/button";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 const Slider: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -75,6 +76,7 @@ const Slider: React.FC = () => {
                   alt={slide.title}
                   width={608}
                   height={434}
+                  loading="lazy"
                   className="w-image-mobile h-213 object-cover mb-2 md:w-463 md:h-370 xl:w-607 xl:h-429"
                 />
                 <div className="md:flex md:flex-col xl:flex-row xl:gap-12">
@@ -85,26 +87,30 @@ const Slider: React.FC = () => {
                     {data.map((item, idx) => (
                       <li
                         key={idx}
-                        className={`cursor-pointer  flex items-center  `}
+                        className={`cursor-pointer    `}
                         onClick={() => handlePaginationClick(idx)}
                       >
-                        {idx === activeIndex && (
-                          <Icon
-                            id="icon-Rectangle-32"
-                            width={6}
-                            height={6}
-                            fill="var(--main-color)"
-                          />
-                        )}
-                        <Paragraph
-                          className={`text-xl uppercase md:text-22 md:leading-5 xl:leading-6 xl:text-28 hover:font-normal ${
-                            idx === activeIndex
-                              ? "font-medium ml-2 opacity-100"
-                              : "font-extralight opacity-50"
-                          } `}
-                        >
-                          {item.name}
-                        </Paragraph>
+                        <Button>
+                          <div className="flex items-center">
+                            {idx === activeIndex && (
+                              <Icon
+                                id="icon-Rectangle-32"
+                                width={6}
+                                height={6}
+                                fill="var(--main-color)"
+                              />
+                            )}
+                            <Paragraph
+                              className={`text-xl uppercase md:text-22 md:leading-5 xl:leading-6 xl:text-28 hover:font-normal ${
+                                idx === activeIndex
+                                  ? "font-medium ml-2 opacity-100"
+                                  : "font-extralight opacity-50"
+                              } `}
+                            >
+                              {item.name}
+                            </Paragraph>
+                          </div>
+                        </Button>
                       </li>
                     ))}
                   </ul>

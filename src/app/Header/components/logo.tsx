@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import { Karantina } from "next/font/google";
 
 const font = Karantina({ subsets: ["latin"], weight: ["400"] });

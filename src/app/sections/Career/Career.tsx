@@ -1,22 +1,16 @@
+import React from "react";
 import Container from "@/app/components/container";
 import Heading from "@/app/components/heading";
 import Paragraph from "@/app/components/paragraph";
-import React from "react";
-import lists, { List } from "./career-data";
-import ContactForm from "./components/join-form";
 import Title from "@/app/components/title";
 import JoinForm from "./components/join-form";
+import ContactForm from "./components/join-form";
+import lists, { List } from "./career-data";
 
 const Career = () => {
   return (
     <section id="career">
-      <div
-        className=" bg-cover py-54 career flex justify-center md:py-16 xl:py-20"
-        style={{
-          backgroundImage: "url('/img/bgcareer.webp')",
-          backgroundPosition: " center top",
-        }}
-      >
+      <div className=" bg-cover py-54 career flex justify-center md:py-16 xl:py-20 career">
         <Container>
           <div className="md:flex md:justify-between">
             <Title>
@@ -72,14 +66,7 @@ const Career = () => {
           </div>
         </Container>
       </div>
-      <div
-        className=" bg-cover  career flex justify-center md:hidden"
-        style={{
-          backgroundImage: "url('/img/bgcareer.webp')",
-          backgroundPosition: " center top",
-          padding: "56px 0",
-        }}
-      >
+      <div className="py-54 bg-cover  career flex justify-center md:hidden">
         <Container>
           <Paragraph className="font-extralight text-sm leading-5 w-paragraph-mobile mr-0 ml-auto">
             Don`t miss your opportunity! Fill out the form right now and join

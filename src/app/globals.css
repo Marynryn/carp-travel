@@ -33,3 +33,14 @@ body {
     background-size: contain;
   }
 }
+.footer {
+  background-image: url(/img/bgfooter.webp);
+}
+.career {
+  background-image: url(/img/bgcareer.webp);
+  background-position: center top;
+}
+.gallery {
+  background-image: url(/img/bggallery.webp);
+  background-position: center top;
+}
