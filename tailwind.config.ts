@@ -69,6 +69,9 @@ const config: Config = {
         "605": "605px",
         "607": "607px",
         "293": "293px",
+        "121": "121px",
+        "415": "415px",
+        "312": "312px",
       },
       height: {
         "53": "53px",
@@ -80,6 +83,10 @@ const config: Config = {
         "120": "120px",
         "71": "71px",
         "429": "429px",
+        "87": "87px",
+        "294": "294px",
+        "187": "187px",
+        "255": "255px",
       },
       backgroundColor: {
         "--button-background": "rgba(255, 255, 255, 0.1)",
@@ -91,6 +98,9 @@ const config: Config = {
       gap: {
         "333": "333px",
         "28": "28px",
+      },
+      left: {
+        "22": "90px",
       },
     },
   },

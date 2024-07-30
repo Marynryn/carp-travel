@@ -31,11 +31,10 @@ const Slider: React.FC = () => {
 
   return (
     <div
-      className="relative w-full py-54 bg-cover slider flex justify-center md:py-16 xl:py-20 "
+      className="relative w-full py-54 bg-cover bg-no-repeat slider flex justify-center md:py-16 xl:py-20 "
       style={{
         backgroundImage: `url(${data[activeIndex].bgImage})`,
         backgroundSize: "cover",
-        backgroundPosition: "center right -240px ",
       }}
     >
       <Container>

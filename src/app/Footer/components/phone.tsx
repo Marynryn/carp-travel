@@ -3,7 +3,7 @@ import React from "react";
 
 const Phone = () => {
   return (
-    <div className="flex gap-5 justify-end xl:justify-center">
+    <div className="flex gap-5 justify-end xl:justify-start">
       <ul className="xl:w-220">
         <li>
           <a

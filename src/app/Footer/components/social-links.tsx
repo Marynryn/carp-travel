@@ -3,7 +3,7 @@ import React from "react";
 
 const SocialLinks = () => {
   return (
-    <div className="flex gap-5 justify-end xl:justify-center">
+    <div className="flex gap-5 justify-end xl:justify-start xl:ml-8">
       <Heading
         tag="h4"
         className="text-xs font-extralight leading-5 mt-1 xl:order-2"

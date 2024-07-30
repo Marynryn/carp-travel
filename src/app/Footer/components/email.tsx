@@ -3,7 +3,7 @@ import React from "react";
 
 const Email = () => {
   return (
-    <div className="flex gap-5 justify-end xl:justify-center xl:mt-16">
+    <div className="flex gap-5 justify-end xl:justify-start xl:mt-16">
       <a
         className="text-sm font-normal hover:underline focus:underline md:text-base xl:w-220 xl:text-lg"
         href="mailto:support@carptravel.com"
