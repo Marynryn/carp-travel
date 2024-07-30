@@ -23,6 +23,8 @@ const config: Config = {
         "8.71": "8.71px",
         "25.9": "25.9px",
         "9.48": "9.48px",
+        "-3.92": "-3.92",
+        "36.48": "36.48px",
       },
       lineHeight: {
         "custom-tight": "1",
@@ -39,9 +41,14 @@ const config: Config = {
         "13": "13px",
         "67": "67px",
         "22": "22px",
+        "98": "98px",
+        "32": "32px",
+        "28": "28px",
       },
       margin: {
         "66": "66px",
+        "630": "630px",
+        "72": "72px",
       },
       width: {
         "button-mobile": "280px",
@@ -57,6 +64,11 @@ const config: Config = {
         "463": "463px",
         "220": "220px",
         "225": "225px",
+        "61": "61px",
+        "295": "295px",
+        "605": "605px",
+        "607": "607px",
+        "293": "293px",
       },
       height: {
         "53": "53px",
@@ -66,6 +78,8 @@ const config: Config = {
         "370": "370px",
         "213": "213px",
         "120": "120px",
+        "71": "71px",
+        "429": "429px",
       },
       backgroundColor: {
         "--button-background": "rgba(255, 255, 255, 0.1)",
@@ -73,6 +87,10 @@ const config: Config = {
       },
       padding: {
         "54": "54px",
+      },
+      gap: {
+        "333": "333px",
+        "28": "28px",
       },
     },
   },

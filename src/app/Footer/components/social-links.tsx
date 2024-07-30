@@ -3,18 +3,21 @@ import React from "react";
 
 const SocialLinks = () => {
   return (
-    <div className="flex gap-5 justify-end">
-      <Heading tag="h4" className="text-xs font-extralight leading-5 mt-1">
+    <div className="flex gap-5 justify-end xl:justify-center">
+      <Heading
+        tag="h4"
+        className="text-xs font-extralight leading-5 mt-1 xl:order-2"
+      >
         Follow us
       </Heading>
-      <ul className="w-20 text-left">
+      <ul className="w-20 text-left xl:order-1 xl:w-220 xl:text-right">
         <li>
           <a
             href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
-            className="text-sm font-normal  hover:underline focus:underline md:text-base"
+            className="text-sm font-normal  hover:underline focus:underline md:text-base xl:text-lg"
           >
             facebook
           </a>
@@ -26,7 +29,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="text-sm font-normal hover:underline focus:underline md:text-base"
+            className="text-sm font-normal hover:underline focus:underline md:text-base xl:text-lg"
           >
             instagram
           </a>
@@ -37,7 +40,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
-            className="text-sm font-normal hover:underline focus:underline md:text-base"
+            className="text-sm font-normal hover:underline focus:underline md:text-base xl:text-lg"
           >
             youtube
           </a>
@@ -48,7 +51,7 @@ const SocialLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"
-            className="text-sm font-normal hover:underline focus:underline md:text-base"
+            className="text-sm font-normal hover:underline focus:underline md:text-base xl:text-lg"
           >
             tiktok
           </a>

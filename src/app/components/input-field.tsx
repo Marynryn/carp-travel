@@ -29,9 +29,9 @@ const InputField: React.FC<InputFieldProps> = ({
         {...register(name)}
         type={type}
         placeholder={placeholder}
-        className={`w-full border-none mt-1 h-6 text-13 pl-2 ${className} ${
-          error ? "text-red-700" : ""
-        } placeholder:text-13 placeholder:font-extralight `}
+        className={`w-full border-none mt-1 h-6 text-13 pl-2 xl:text-xl ${className} ${
+          error ? "text-red-700 placeholder:text-red-700" : ""
+        } placeholder:text-13  placeholder:font-extralight `}
         style={{ backgroundColor: "var(--input-field)" }}
       />
       {error ? (

@@ -3,11 +3,11 @@ import React from "react";
 
 const Phone = () => {
   return (
-    <div className="flex gap-5 justify-end">
-      <ul className="">
+    <div className="flex gap-5 justify-end xl:justify-center">
+      <ul className="xl:w-220">
         <li>
           <a
-            className="text-sm font-normal hover:underline focus:underline md:text-base"
+            className="text-sm font-normal hover:underline focus:underline md:text-base xl:text-lg"
             href="tel:380981234567"
           >
             +38 (098) 12 34 567
@@ -15,7 +15,7 @@ const Phone = () => {
         </li>
         <li>
           <a
-            className="text-sm font-normal hover:underline focus:underline md:text-base"
+            className="text-sm font-normal hover:underline focus:underline md:text-base xl:text-lg"
             href="tel:380981234567"
           >
             +38 (098) 12 34 567

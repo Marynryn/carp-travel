@@ -12,7 +12,7 @@ const Footer = () => {
     <Element
       name="contacts"
       id="contacts"
-      className="flex justify-center py-54 bg-cover bg-no-repeat md:py-16"
+      className="flex justify-center py-54 bg-cover bg-no-repeat md:py-16 xl:py-20"
       style={{
         backgroundImage: "url('/img/bgfooter.webp')",
       }}
@@ -21,8 +21,10 @@ const Footer = () => {
         <Title>
           Contact <span className="font-medium">us</span>
         </Title>
-        <Contacts />
-        <ContactForm />
+        <div className="xl:flex">
+          <Contacts />
+          <ContactForm />
+        </div>
       </Container>
     </Element>
   );

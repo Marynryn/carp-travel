@@ -19,7 +19,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
             onClick={handleLinkClick}
             smooth={true}
             duration={500}
-            className=""
+            className="cursor-pointer"
           >
             About
           </Link>
@@ -30,7 +30,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
             onClick={handleLinkClick}
             smooth={true}
             duration={500}
-            className=""
+            className="cursor-pointer"
           >
             Services
           </Link>
@@ -41,7 +41,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
             onClick={handleLinkClick}
             smooth={true}
             duration={500}
-            className=""
+            className="cursor-pointer"
           >
             Career
           </Link>
@@ -52,7 +52,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
             onClick={handleLinkClick}
             smooth={true}
             duration={500}
-            className=""
+            className="cursor-pointer"
           >
             Gallery
           </Link>
@@ -63,7 +63,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
             onClick={handleLinkClick}
             smooth={true}
             duration={500}
-            className=""
+            className="cursor-pointer"
           >
             Contacts
           </Link>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+
 import { Karantina } from "next/font/google";
 
 const font = Karantina({ subsets: ["latin"], weight: ["400"] });
@@ -9,23 +9,23 @@ interface LogoProps {
 
 const Logo = ({ className = "" }: LogoProps) => {
   return (
-    <div
-     
-      className={`text-center ${className}`}
-      style={{ width: "61px" }}
-    >
-      <div className="relative" style={{ width: "59px", height: "20px" }}>
-        <Image
-          src="/img/logo1x.webp"
-          alt="Company Logo"
-          width={59}
-          height={20}
-          priority
-          className="object-contain"
-        />
+    <div className={`text-center ${className}`} style={{ width: "61px" }}>
+      <div className="relative h-5 w-61">
+        <picture>
+          <source srcSet="/img/logo1x.webp" type="image/webp" />
+          <source srcSet="/img/logo2x.webp" type="image/webp" />
+          <Image
+            src="/img/logo1x.webp"
+            alt="Company Logo"
+            width={61}
+            height={22}
+            priority
+            className=""
+          />
+        </picture>
       </div>
       <span
-        className={`${font.className} tracking-custom text-sm block leading-custom-tight`}
+        className={`${font.className} tracking-2.4 text-sm block leading-custom-tight`}
       >
         CarpTravel
       </span>

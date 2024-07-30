@@ -52,8 +52,8 @@ const JoinForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit, onError)} className="mt-6">
-      <div className="md:flex md:gap-5">
-        <div>
+      <div className="md:flex md:gap-5 xl:gap-6">
+        <div className="xl:w-full">
           <div className="block ">
             <label
               htmlFor="fullName"
@@ -90,6 +90,22 @@ const JoinForm: React.FC = () => {
           </div>
 
           <div>
+            <div>
+              <label
+                htmlFor="position"
+                className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
+                  errors.position?.message ? "text-red-700" : ""
+                }`}
+              >
+                Position
+              </label>
+              <InputField
+                name="position"
+                placeholder="Movie maker"
+                register={register}
+                error={errors.position?.message}
+              />
+            </div>
             <label
               htmlFor="phone"
               className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
@@ -103,25 +119,8 @@ const JoinForm: React.FC = () => {
               error={errors.phone?.message}
             />
           </div>
-
-          <div>
-            <label
-              htmlFor="position"
-              className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
-                errors.position?.message ? "text-red-700" : ""
-              }`}
-            >
-              Position
-            </label>
-            <InputField
-              name="position"
-              placeholder="Movie maker"
-              register={register}
-              error={errors.position?.message}
-            />
-          </div>
         </div>
-        <div className=" mb-4 md:w-220">
+        <div className=" mb-4 md:w-220 xl:w-full">
           <label
             htmlFor="message"
             className="block text-left text-xs font-extralight tracking-2.4 leading-6"
@@ -137,7 +136,7 @@ const JoinForm: React.FC = () => {
         </div>
       </div>
       <div className="md:flex md:justify-between">
-        <div className="md:w-220">
+        <div className="md:w-220 xl:w-295">
           <Checkbox
             name="termsAccepted"
             register={register}

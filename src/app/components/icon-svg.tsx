@@ -1,4 +1,3 @@
-
 import React from "react";
 
 interface IconProps {
@@ -18,7 +17,7 @@ const Icon: React.FC<IconProps> = ({
   stroke = "currentColor",
   className = "",
 }) => {
-  const href = `/svg/symbol-defs.svg#${id}`;
+  const href = `svg/symbol-defs.svg#${id}`;
 
   return (
     <svg

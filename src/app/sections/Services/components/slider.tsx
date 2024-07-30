@@ -31,7 +31,7 @@ const Slider: React.FC = () => {
 
   return (
     <div
-      className="relative w-full py-54 bg-cover slider flex justify-center md:py-16 "
+      className="relative w-full py-54 bg-cover slider flex justify-center md:py-16 xl:py-20 "
       style={{
         backgroundImage: `url(${data[activeIndex].bgImage})`,
         backgroundSize: "cover",
@@ -39,16 +39,18 @@ const Slider: React.FC = () => {
       }}
     >
       <Container>
-        <div className="md:flex">
-          <Title className="max-w-80">
+        <div className="md:flex xl:gap-40">
+          <Title className="max-w-80 xl:max-w-lg xl:leading-tight">
             We<span className="font-medium"> Offer</span>
           </Title>
           <Heading
             tag="h3"
-            className="text-4xl mb-2 text-right font-thin mr-0 ml-auto md:text-67 md:mb-0  md:leading-80 "
+            className="text-4xl mb-2 text-right font-thin mr-0 ml-auto md:text-67 md:mb-0  md:leading-80 xl:text-98 xl:-tracking-3.92 xl:m-0 xl:leading-tight"
           >
             0{activeIndex + 1}
-            <span className="text-4xl opacity-20 md:text-67">/05</span>
+            <span className="text-4xl opacity-20 md:text-67 xl:text-98 xl:-tracking-3.92">
+              /05
+            </span>
           </Heading>
         </div>
         <Swiper
@@ -65,7 +67,7 @@ const Slider: React.FC = () => {
           {data.map((slide: Slide, index: number) => (
             <SwiperSlide key={index}>
               <div
-                className={`flex flex-col items-center justify-center h-full transition-opacity md:flex-row md:gap-5 md:mt-10 duration-500 ${
+                className={`flex flex-col items-center justify-center h-full transition-opacity md:flex-row md:gap-5 md:mt-10 xl:mt-6 duration-500 ${
                   index === activeIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -74,13 +76,13 @@ const Slider: React.FC = () => {
                   alt={slide.title}
                   width={608}
                   height={434}
-                  className="w-image-mobile h-213 object-cover mb-2 md:w-463 md:h-370 "
+                  className="w-image-mobile h-213 object-cover mb-2 md:w-463 md:h-370 xl:w-607 xl:h-429"
                 />
-                <div className="md:flex md:flex-col">
-                  <Paragraph className="text-xs mb-6 text-right font-extralight tracking-2.4 mr-0 ml-auto md:order-2 md:mb-8 md:mx-0">
+                <div className="md:flex md:flex-col xl:flex-row xl:gap-12">
+                  <Paragraph className=" xl:hidden text-xs mb-6 text-right font-extralight tracking-2.4 mr-0 ml-auto md:order-2 md:mb-8 md:mx-0">
                     {slide.title}
                   </Paragraph>
-                  <ul className="custom-pagination mt-4 mb-8  flex flex-col gap-4 ml-0 mr-auto md:order-1 md:mt-0 md:mb-6">
+                  <ul className="custom-pagination mt-4 mb-8  flex flex-col gap-4 ml-0 mr-auto md:order-1 md:mt-0 md:mb-6 xl:order-none xl:mb-0 xl:mx-0 xl:w-button-mobile xl:gap-6">
                     {data.map((item, idx) => (
                       <li
                         key={idx}
@@ -96,7 +98,7 @@ const Slider: React.FC = () => {
                           />
                         )}
                         <Paragraph
-                          className={`text-xl uppercase md:text-22 md:leading-5  ${
+                          className={`text-xl uppercase md:text-22 md:leading-5 xl:leading-6 xl:text-28 hover:font-normal ${
                             idx === activeIndex
                               ? "font-medium ml-2 opacity-100"
                               : "font-extralight opacity-50"
@@ -107,9 +109,14 @@ const Slider: React.FC = () => {
                       </li>
                     ))}
                   </ul>
-                  <Paragraph className="text-sm md:h-120 font-extralight leading-5 text-justify md:order-3 md:leading-normal md:text-13">
-                    {slide.description}
-                  </Paragraph>
+                  <div className=" md:order-3 xl:w-293">
+                    <Paragraph className="hidden xl:block xl:text-xs xl:leading-6 xl:tracking-2.4 xl:font-extralight">
+                      {slide.title}
+                    </Paragraph>
+                    <Paragraph className="text-sm  font-extralight leading-5 text-justify xl:order-none md:leading-normal md:text-13 xl:mt-60 xl:text-lg xl:leading-6 xl:tracking-normal">
+                      {slide.description}
+                    </Paragraph>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>

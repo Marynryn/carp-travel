@@ -47,10 +47,10 @@ const ContactForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit, onError)}
-      className="mt-6 md:mt-16 md:flex md:gap-5"
+      className="mt-6 md:mt-16 md:flex md:gap-5 xl:w-full xl:block"
     >
-      <div className="md:w-220">
-        <div className="block ">
+      <div className="md:w-220 xl:w-full xl:flex xl:gap-28">
+        <div className="block xl:w-full">
           <label
             htmlFor="fullName"
             className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
@@ -67,7 +67,7 @@ const ContactForm: React.FC = () => {
           />
         </div>
 
-        <div>
+        <div className="xl:w-full">
           <label
             htmlFor="email"
             className={`block text-left text-xs font-extralight tracking-2.4 leading-6  ${
@@ -85,7 +85,7 @@ const ContactForm: React.FC = () => {
           />
         </div>
       </div>
-      <div className="w-full ">
+      <div className="w-full xl:mt-4">
         <div className=" mb-4">
           <label
             htmlFor="message"

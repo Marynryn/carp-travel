@@ -1,25 +1,16 @@
 "use client";
-import React from "react";
+import { useEffect, useState } from "react";
 import { scroller } from "react-scroll";
 import Icon from "../../../components/icon-svg";
 import { useMediaQuery } from "react-responsive";
 
 const JoinButton: React.FC = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTablet = useMediaQuery({
-    query: "(min-width: 768px) and (max-width: 1280px)",
+    query: "(min-width: 768px) and (max-width:1279px)",
   });
   const isDesktop = useMediaQuery({ query: "(min-width: 1280px)" });
 
-  const scrollToContacts = () => {
-    scroller.scrollTo("contacts", {
-      duration: 1000,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  };
-
-  let iconProps = {
+  const [iconProps, setIconProps] = useState({
     left: {
       id: "icon-mobile-left",
       width: 42,
@@ -30,44 +21,52 @@ const JoinButton: React.FC = () => {
       width: 42,
       height: 53,
     },
+  });
+
+  useEffect(() => {
+    if (isTablet) {
+      setIconProps({
+        left: {
+          id: "icon-tablet-left",
+          width: 35,
+          height: 50,
+        },
+        right: {
+          id: "icon-tablet-right",
+          width: 35,
+          height: 50,
+        },
+      });
+    } else if (isDesktop) {
+      setIconProps({
+        left: {
+          id: "icon-desktop-left",
+          width: 44,
+          height: 71,
+        },
+        right: {
+          id: "icon-desktop-right",
+          width: 44,
+          height: 71,
+        },
+      });
+    }
+  }, [isTablet, isDesktop]);
+
+  const scrollToContacts = () => {
+    scroller.scrollTo("contacts", {
+      duration: 1000,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
   };
 
-  if (isTablet) {
-    iconProps = {
-      left: {
-        id: "icon-tablet-left",
-        width: 35,
-        height: 50,
-      },
-      right: {
-        id: "icon-tablet-right",
-        width: 35,
-        height: 50,
-      },
-    };
-  }
-
-  if (isDesktop) {
-    iconProps = {
-      left: {
-        id: "icon-desktop-left",
-        width: 62,
-        height: 72,
-      },
-      right: {
-        id: "icon-desktop-right",
-        width: 44,
-        height: 71,
-      },
-    };
-  }
-
   return (
-    <div className="h-53 w-button-mobile mt-6 md:w-230 md:h-50">
+    <div className="h-53 w-button-mobile mt-6 md:w-230 md:h-50 xl:h-71 xl:w-full">
       <button
         type="button"
         onClick={scrollToContacts}
-        className="h-full flex -bg--button-background items-center w-full uppercase hover:bg-hover-button"
+        className="h-full flex cursor-pointer -bg--button-background items-center w-full uppercase hover:bg-hover-button"
       >
         <Icon
           id={iconProps.left.id}
@@ -76,7 +75,12 @@ const JoinButton: React.FC = () => {
           fill="var(--main-color)"
           stroke="var(--main-color)"
         />
-        <span className="mx-auto">Join now</span>
+        <span
+          className="mx-auto xl:text-32 xl:font-bold
+        "
+        >
+          Join now
+        </span>
         <Icon
           id={iconProps.right.id}
           width={iconProps.right.width}
