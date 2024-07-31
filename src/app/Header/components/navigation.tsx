@@ -23,7 +23,9 @@ const Navigation = ({ onClose }: NavigationProps) => {
               onClick={handleLinkClick}
               smooth={true}
               duration={500}
-              className="cursor-pointer focus-visible inline-block transform transition-transform duration-300 hover:outline-1 focus:outline-1 focus:ring-2 focus:ring-primary"
+              role="link"
+              tabIndex={0}
+              className="cursor-pointer  inline-block transform transition-transform duration-300 hover:scale-105 focus:scale-105 "
             >
               {link.name}
             </Link>
