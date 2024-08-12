@@ -2,7 +2,7 @@
 
 import React, { ChangeEvent, FC, useState } from "react";
 import { UseFormRegister } from "react-hook-form";
-import Icon from "../../../components/icon-svg";
+import Icon from "../../../../components/icon-svg";
 import { FormValues } from "./join-form";
 
 interface PhoneInputProps {
@@ -42,19 +42,19 @@ const PhoneInput: FC<PhoneInputProps> = ({ register, error }) => {
       </div>
       {error ? (
         <div
-          className="flex text-xs h-4 items-center justify-end  "
+          className="flex text-xs items-center justify-end  "
           style={{ color: "var(--error-color)" }}
         >
           <Icon id="icon-x" width={16} height={16} fill="var(--error-color)" />
           <span
-            className="font-extralight text-xs tracking-2.4 leading-5 h-4"
+            className="font-extralight text-xs tracking-2.4 leading-5 text-center"
             style={{ color: "var(--error-color)" }}
           >
             {error}
           </span>
         </div>
       ) : (
-        <div className="h-4"></div>
+        <div className="h-5"></div>
       )}
     </>
   );

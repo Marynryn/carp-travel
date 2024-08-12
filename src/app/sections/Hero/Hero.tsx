@@ -1,12 +1,12 @@
-import Container from "@/app/components/container";
-import Heading from "@/app/components/heading";
-import Paragraph from "@/app/components/paragraph";
+import Container from "@/components/container";
+import Heading from "@/components/heading";
+import Paragraph from "@/components/paragraph";
 import Journey from "./components/journey";
 import JoinButton from "./components/join-button";
 
 const Hero: React.FC = () => {
   return (
-    <section className="  pb-14 bg-cover bg-center pt-0 bg-no-repeat flex justify-center md:pb-16 xl:pb-20">
+    <section className=" relative pb-14 pt-0  flex justify-center md:pb-16 xl:pb-20 hero">
       <Container>
         <div
           className="md:flex md:mt-7 md:gap-12 xl:mt-0 xl:gap-72

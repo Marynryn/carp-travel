@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "@/app/components/heading";
+import Heading from "@/components/heading";
 
 const Email = () => {
   return (

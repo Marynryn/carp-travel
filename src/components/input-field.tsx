@@ -2,7 +2,7 @@
 
 import React from "react";
 import { UseFormRegister } from "react-hook-form";
-import { FormValues } from "../sections/Career/components/join-form";
+import { FormValues } from "../app/sections/Career/components/join-form";
 import Icon from "./icon-svg";
 
 interface InputFieldProps {
@@ -36,19 +36,19 @@ const InputField: React.FC<InputFieldProps> = ({
       />
       {error ? (
         <div
-          className="flex h-4 text-xs items-center justify-end  mr-o ml-auto"
+          className="flex  text-xs items-center justify-end  mr-o ml-auto"
           style={{ color: "var(--error-color)" }}
         >
           <Icon id="icon-x" width={16} height={16} fill="var(--error-color)" />
           <span
-            className="font-extralight text-xs tracking-2.4 leading-5 h-4"
+            className="font-extralight text-xs tracking-2.4 leading-5 text-center"
             style={{ color: "var(--error-color)" }}
           >
             {error}
           </span>
         </div>
       ) : (
-        <div className="h-4"></div>
+        <div className="h-5"></div>
       )}
     </>
   );

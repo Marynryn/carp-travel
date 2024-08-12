@@ -1,4 +1,4 @@
-import Heading from "@/app/components/heading";
+import Heading from "@/components/heading";
 
 export interface JourneyProps {}
 
@@ -13,12 +13,12 @@ const Journey = ({}: JourneyProps) => {
           <span className="font-medium leading-custom-thin md:tracking-9.48  ">
             7
           </span>
-          <span className="relative md:-left-3 md:tracking-9.48 xl:tracking-wide">
+          <span className=" font-thin relative md:-left-3 md:tracking-9.48 xl:tracking-wide">
             Days
           </span>
         </Heading>
       </div>
-      <span className="uppercase tracking-9.48 text-xs font-light leading-custom-thin md:tracking-25.9 md:text-sm xl:text-base xl:tracking-36.48 xl:block">
+      <span className="uppercase tracking-8.71 text-xs font-light leading-custom-thin md:tracking-25.9 md:text-sm xl:text-base xl:tracking-36.48 xl:block">
         Journey
       </span>
     </div>

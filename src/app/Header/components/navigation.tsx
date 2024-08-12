@@ -25,7 +25,7 @@ const Navigation = ({ onClose }: NavigationProps) => {
               duration={500}
               role="link"
               tabIndex={0}
-              className="cursor-pointer  inline-block transform transition-transform duration-300 hover:scale-105 focus:scale-105 "
+              className="cursor-pointer  inline-block transform transition-transform duration-300 hover:underline focus:underline "
             >
               {link.name}
             </Link>

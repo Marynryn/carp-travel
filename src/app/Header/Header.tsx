@@ -2,17 +2,20 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Button from "../components/button";
-import Modal from "../components/modal";
+import Button from "../../components/button";
+import Modal from "../../components/modal";
 import Logo from "./components/logo";
 import Navigation from "./components/navigation";
 
 const Header: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
   return (
-    <header className="flex justify-center">
+    <header className=" header flex justify-center z-10 ">
       <div className="px-5 py-9 w-full flex justify-between items-center sm:w-480  md:w-768 md:px-8 md:pt-6 xl:w-1280 xl:mx-auto xl:pb-12">
-        <Link href={"/"} className="inline-block ">
+        <Link
+          href={"/"}
+          className=" cursor-pointer  inline-block transform transition-transform duration-300 hover:underline focus:underline"
+        >
           <Logo />
         </Link>
         <div className="md:hidden">

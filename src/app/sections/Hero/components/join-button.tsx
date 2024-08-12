@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import { scroller } from "react-scroll";
+import { Link } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
-import Icon from "../../../components/icon-svg";
+import Icon from "../../../../components/icon-svg";
 
 const JoinButton: React.FC = () => {
   const isTablet = useMediaQuery({
@@ -53,19 +53,14 @@ const JoinButton: React.FC = () => {
     }
   }, [isTablet, isDesktop]);
 
-  const scrollToContacts = () => {
-    scroller.scrollTo("contacts", {
-      duration: 1000,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  };
-
   return (
     <div className="h-53 w-button-mobile mt-6 md:w-230 md:h-50 xl:h-71 xl:w-full mx-auto ">
-      <button
-        type="button"
-        onClick={scrollToContacts}
+      <Link
+        to="contacts"
+        smooth={true}
+        duration={500}
+        role="link"
+        tabIndex={0}
         className="h-full flex cursor-pointer -bg--button-background items-center w-full uppercase hover:bg-hover-button focus:bg-hover-button "
       >
         <Icon
@@ -88,7 +83,7 @@ const JoinButton: React.FC = () => {
           fill="var(--main-color)"
           stroke="var(--main-color)"
         />
-      </button>
+      </Link>
     </div>
   );
 };

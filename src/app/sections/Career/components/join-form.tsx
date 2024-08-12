@@ -5,8 +5,8 @@ import toast from "react-hot-toast";
 import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "../../../../schema/schema";
-import InputField from "@/app/components/input-field";
-import Button from "@/app/components/button";
+import InputField from "@/components/input-field";
+import Button from "@/components/button";
 import Checkbox from "./checkbox";
 import PhoneInputField from "./phone-input";
 

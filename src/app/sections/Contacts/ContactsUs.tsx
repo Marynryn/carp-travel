@@ -1,16 +1,15 @@
 "use client";
 
 import React from "react";
-import { Element } from "react-scroll";
-import Container from "../components/container";
-import Title from "../components/title";
+
+import Container from "../../../components/container";
+import Title from "../../../components/title";
 import Contacts from "./components/contacts";
 import ContactForm from "./components/contact-form";
 
-const Footer = () => {
+const ContactUs = () => {
   return (
-    <Element
-      name="contacts"
+    <section
       id="contacts"
       className="flex justify-center py-54 bg-cover bg-no-repeat md:py-16 xl:py-20 footer"
     >
@@ -23,7 +22,7 @@ const Footer = () => {
           <ContactForm />
         </div>
       </Container>
-    </Element>
+    </section>
   );
 };
-export default Footer;
+export default ContactUs;

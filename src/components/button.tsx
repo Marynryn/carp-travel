@@ -7,7 +7,7 @@ const Button = ({ disabled, className, ...rest }: ButtonProps) => {
   return (
     <button
       {...rest}
-      className={` bg-transparent border-none uppercase cursor-pointer inline-block transform duration-300 hover:scale-105 focus:scale-105 ${className}`}
+      className={` bg-transparent border-none uppercase cursor-pointer inline-block transform duration-300 hover:underline focus:underline ${className}`}
     />
   );
 };

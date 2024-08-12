@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "@/app/components/container";
-import Heading from "@/app/components/heading";
-import Paragraph from "@/app/components/paragraph";
-import Title from "@/app/components/title";
+import Container from "@/components/container";
+import Heading from "@/components/heading";
+import Paragraph from "@/components/paragraph";
+import Title from "@/components/title";
 import JoinForm from "./components/join-form";
 import ContactForm from "./components/join-form";
 import lists, { List } from "./career-data";

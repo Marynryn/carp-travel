@@ -4,9 +4,9 @@ import React from "react";
 import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import toast from "react-hot-toast";
-import InputField from "@/app/components/input-field";
+import InputField from "@/components/input-field";
 import { contactSchema } from "@/schema/schema";
-import Button from "@/app/components/button";
+import Button from "@/components/button";
 
 export interface ContactFormValues {
   fullName: string;

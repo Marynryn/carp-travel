@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import Container from "@/app/components/container";
-import Title from "@/app/components/title";
+import Container from "@/components/container";
+import Title from "@/components/title";
 import SliderGallery from "./components/slider-gallery";
 import { sliderItems } from "./data-gallery";
 import { Item } from "./data-gallery";
